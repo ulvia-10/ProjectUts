@@ -21,7 +21,6 @@ public class BagsActivity extends AppCompatActivity {
 
 
         RecyclerView bagsView = findViewById(R.id.rv_album);
-
         List<Logo> bags = new ArrayList<>();
         bags.add(new Logo("https://img.berdu.my.id/img/200/vn2yyd7vn4r9okm3/j9ADpoHbzT7AIvNraP629.jpg", "Lumi Mutiara"));
         bags.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/UVWsophE1coLBnab2xM4A2dk.webp", "Hakku Creme"));

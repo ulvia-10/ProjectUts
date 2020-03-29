@@ -15,6 +15,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void DressPress(View view) {
+        Intent intent = new Intent(this, DressActivity.class);
+        startActivity(intent);
     }
 
     public void BagsPress(View view) {
@@ -23,8 +25,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ShoesPress(View view) {
+        Intent intent = new Intent(this, ShoesActivity.class);
+        startActivity(intent);
     }
 
     public void ExitPress(View view) {
+        finish();
     }
 }

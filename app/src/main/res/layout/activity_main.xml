@@ -9,9 +9,9 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="126dp"
-        android:layout_height="43dp"
-        android:background="#f08080"
+        android:layout_width="139dp"
+        android:layout_height="48dp"
+        android:background="#99f08080"
         android:onClick="DressPress"
         android:text="Dress"
         android:textSize="13dp"
@@ -19,43 +19,42 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.416" />
+        app:layout_constraintVertical_bias="0.42" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="121dp"
-        android:layout_height="41dp"
-        android:background="#f08080"
+        android:layout_width="135dp"
+        android:layout_height="44dp"
+        android:background="#99f08080"
         android:onClick="BagsPress"
         android:text="Bags"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.611" />
+        app:layout_constraintVertical_bias="0.617" />
 
     <Button
         android:id="@+id/button7"
-        android:layout_width="125dp"
-        android:layout_height="44dp"
-        android:background="#f08080"
+        android:layout_width="136dp"
+        android:layout_height="42dp"
+        android:background="#99f08080"
         android:onClick="ShoesPress"
         android:text="Shoes"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.512" />
+        app:layout_constraintVertical_bias="0.521" />
 
     <Button
         android:id="@+id/exit"
         android:layout_width="214dp"
         android:layout_height="48dp"
-        android:background="#F3B1D6"
+        android:background="#A6DA0F80"
         android:onClick="ExitPress"
         android:text="EXIT"
         android:textSize="15dp"

@@ -56,7 +56,6 @@ public class Item extends AbstractItem<Item,Item.ViewHolder> {
             Picasso.get().load(item.logo).into(logoImage);
             nameText.setText(item.name);
         }
-
         @Override
         public void unbindView(Item item) {
             logoImage.setImageBitmap(null);

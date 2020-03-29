@@ -18,13 +18,11 @@ import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     private Context context;
-
+    private List<Logo> items;
     public Adapter(Context context, List<Logo> items) {
         this.context = context;
         this.items = items;
     }
-
-    private List<Logo> items;
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -37,12 +35,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder>{
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Logo item = items.get(position);
 
-        Picasso.get().load(item.getLogo()).into(holder.logoImage);
+        Picasso
+                .get().load(item.getLogo()).into(holder.logoImage);
         holder.nameText.setText(item.getName());
     }
 
     @Override
     public int getItemCount() {
+
         return (items != null) ? items.size() : 0;
     }
 

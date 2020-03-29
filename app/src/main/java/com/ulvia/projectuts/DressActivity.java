@@ -5,7 +5,11 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageView;
+import android.widget.TextView;
 
+import com.bumptech.glide.Glide;
 import com.ulvia.projectuts.adapter.Adapter;
 import com.ulvia.projectuts.model.Logo;
 
@@ -35,4 +39,5 @@ public class DressActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         dressView.setLayoutManager(layoutManager);
     }
+
 }
