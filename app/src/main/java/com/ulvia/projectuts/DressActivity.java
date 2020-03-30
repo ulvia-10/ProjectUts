@@ -38,6 +38,7 @@ public class DressActivity extends AppCompatActivity {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
         dressView.setLayoutManager(layoutManager);
+
     }
 
 }

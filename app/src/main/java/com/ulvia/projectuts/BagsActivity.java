@@ -12,13 +12,14 @@ import com.ulvia.projectuts.model.Logo;
 import java.util.ArrayList;
 import java.util.List;
 
+import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
+
 public class BagsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bags);
-
 
         RecyclerView bagsView = findViewById(R.id.rv_album);
         List<Logo> bags = new ArrayList<>();
