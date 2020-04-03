@@ -3,11 +3,21 @@ package com.ulvia.projectuts.model;
 public class Logo {
     private String logo;
     private String name;
-    public Logo(String logo, String name) {
-        this.logo = logo;
-        this.name = name;
+
+    public int getRowID() {
+        return rowID;
     }
 
+    public void setRowID(int rowID) {
+        this.rowID = rowID;
+    }
+
+    private int rowID;
+    public Logo(String logo, String name, int rowID) {
+        this.logo = logo;
+        this.name = name;
+        this.rowID = rowID;
+    }
     public String getLogo() {
         return logo;
     }
@@ -23,9 +33,5 @@ public class Logo {
     public void setName(String name) {
         this.name = name;
     }
-
-
-
-
 
 }

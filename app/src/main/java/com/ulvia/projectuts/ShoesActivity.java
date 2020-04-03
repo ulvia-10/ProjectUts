@@ -21,15 +21,15 @@ public class ShoesActivity extends AppCompatActivity {
 
         RecyclerView shoesView = findViewById(R.id.rv_album);
         List<Logo> shoes = new ArrayList<>();
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbaoLI.webp", "Kania Cream Almond"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LG1RKF.webp", "Ghina Indigo"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/zcQ6NEYPrKpmu628hXGYaoge.webp","Roxy Capella"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbekiZ.webp","Kania Snow Grey"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/VTsxrokK0fad9WF9XWDu5B2.webp","Zooela Berry"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LG1mu0L.webp","Ghina Charcoal"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/TSobOp1lswFiW7cfuHOxRgfG.webp","Zooela Almond"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/vsksu1CwKJFWprrpAzX9T.webp","Roxy Vega"));
-        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/AzRIEVbEiEdRqFSeW5gv2Dvp.webp","Roxy Antares"));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbaoLI.webp", "Kania Cream Almond",1));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LG1RKF.webp", "Ghina Indigo",2));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/zcQ6NEYPrKpmu628hXGYaoge.webp","Roxy Capella",3));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbekiZ.webp","Kania Snow Grey",4));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/VTsxrokK0fad9WF9XWDu5B2.webp","Zooela Berry",5));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LG1mu0L.webp","Ghina Charcoal",6));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/TSobOp1lswFiW7cfuHOxRgfG.webp","Zooela Almond",7));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/vsksu1CwKJFWprrpAzX9T.webp","Roxy Vega",8));
+        shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/AzRIEVbEiEdRqFSeW5gv2Dvp.webp","Roxy Antares",9));
         Adapter adapter = new Adapter(this, shoes);
         shoesView.setAdapter(adapter);
 

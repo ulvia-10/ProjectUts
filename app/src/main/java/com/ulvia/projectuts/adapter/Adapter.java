@@ -20,8 +20,10 @@ import com.ulvia.projectuts.model.Logo;
 import java.util.List;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
+
     private Context context;
     private List<Logo> items;
+
     // Define listener member variable
     private AdapterView.OnItemClickListener listener;
 
@@ -46,9 +48,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Logo item = items.get(position);
-
-        Picasso.get().load(item.getLogo()).into(holder.logoImage);
         holder.nameText.setText(item.getName());
+        Picasso.get().load(item.getLogo()).into(holder.logoImage);
     }
 
     @Override
@@ -66,6 +67,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             this.logoImage = itemView.findViewById(R.id.image_logo);
             this.nameText = itemView.findViewById(R.id.text_name);
             itemView.setOnClickListener(this);
+
         }
 
         @Override

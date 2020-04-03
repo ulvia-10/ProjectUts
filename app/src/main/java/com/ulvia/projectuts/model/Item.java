@@ -18,12 +18,19 @@ public class Item extends AbstractItem<Item,Item.ViewHolder> {
 
     private String logo;
     private String name;
+    private String rowID;
 
-    public Item(String logo, String name) {
+    public String getRowID() {
+        return rowID;
+    }
+    public void setRowID(String rowID) {
+        this.rowID = rowID;
+    }
+    public Item(String logo, String name, String rowID) {
         this.logo = logo;
         this.name = name;
+        this.rowID = rowID;
     }
-
     @NonNull
     @Override
     public ViewHolder getViewHolder(View v) {
