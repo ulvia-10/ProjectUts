@@ -3,6 +3,7 @@ package com.ulvia.projectuts.model;
 public class Logo {
     private String logo;
     private String name;
+    private int rowID;
 
     public int getRowID() {
         return rowID;
@@ -12,7 +13,6 @@ public class Logo {
         this.rowID = rowID;
     }
 
-    private int rowID;
     public Logo(String logo, String name, int rowID) {
         this.logo = logo;
         this.name = name;

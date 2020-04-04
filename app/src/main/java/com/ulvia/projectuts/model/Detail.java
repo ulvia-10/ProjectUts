@@ -1,29 +1,19 @@
 package com.ulvia.projectuts.model;
 
-import com.ulvia.projectuts.BagsActivity;
+import android.os.Parcel;
+import android.os.Parcelable;
 
 import java.util.ArrayList;
 
-public class Detail {
+public class Detail implements Parcelable {
     private String logo;
-    private String name;
-    private ArrayList<String> mDetail = new ArrayList<>();
-    private int rowID;
-    BagsActivity bags;
-    public int getRowID() {
-        return rowID;
-    }
+    private String judul;
+    private String desc;
+    private String stok;
 
-    public void setRowID(int rowID) {
-        this.rowID = rowID;
-    }
+    public Detail() {
 
-    public Detail(String logo, ArrayList<String> mDetail, int rowID) {
-        this.logo = logo;
-        this.mDetail = mDetail;
-        this.rowID = rowID;
     }
-
 
     public String getLogo() {
         return logo;
@@ -33,11 +23,60 @@ public class Detail {
         this.logo = logo;
     }
 
-    public ArrayList<String> getmDetail() {
-        return mDetail;
+    public String getJudul() {
+        return judul;
     }
 
-    public void setmDetail(ArrayList<String> mDetail) {
-        this.mDetail = mDetail;
+    public void setJudul(String judul) {
+        this.judul = judul;
     }
+
+    public String getDesc() {
+        return desc;
+    }
+
+    public void setDesc(String desc) {
+        this.desc = desc;
+    }
+
+    public String getStok() {
+        return stok;
+    }
+
+    public void setStok(String stok) {
+        this.stok = stok;
+    }
+
+
+    protected Detail(Parcel in) {
+        logo = in.readString();
+        judul = in.readString();
+        desc = in.readString();
+        stok = in.readString();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(logo);
+        dest.writeString(judul);
+        dest.writeString(desc);
+        dest.writeString(stok);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Detail> CREATOR = new Creator<Detail>() {
+        @Override
+        public Detail createFromParcel(Parcel in) {
+            return new Detail(in);
+        }
+
+        @Override
+        public Detail[] newArray(int size) {
+            return new Detail[size];
+        }
+    };
 }

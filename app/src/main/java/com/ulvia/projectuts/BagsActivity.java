@@ -7,12 +7,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.ulvia.projectuts.adapter.Adapter;
+import com.ulvia.projectuts.model.Detail;
+import com.ulvia.projectuts.model.DetailList;
 import com.ulvia.projectuts.model.Logo;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 
 public class BagsActivity extends AppCompatActivity {
 
@@ -32,6 +32,7 @@ public class BagsActivity extends AppCompatActivity {
         bags.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/2D15GT5vj15cBy4n4p6Acf.webp","Lumi Intan",7));
 
         Adapter adapter = new Adapter(this, bags);
+        adapter.setListdetail(DetailList.getListData3());
         bagsView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);

@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.ulvia.projectuts.adapter.Adapter;
+import com.ulvia.projectuts.model.DetailList;
 import com.ulvia.projectuts.model.Logo;
 
 import java.util.ArrayList;
@@ -31,6 +32,7 @@ public class ShoesActivity extends AppCompatActivity {
         shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/vsksu1CwKJFWprrpAzX9T.webp","Roxy Vega",8));
         shoes.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/AzRIEVbEiEdRqFSeW5gv2Dvp.webp","Roxy Antares",9));
         Adapter adapter = new Adapter(this, shoes);
+        adapter.setListdetail(DetailList.getListData2());
         shoesView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.ulvia.projectuts.adapter.Adapter;
+import com.ulvia.projectuts.model.DetailList;
 import com.ulvia.projectuts.model.Logo;
 
 import java.util.ArrayList;
@@ -34,6 +35,7 @@ public class DressActivity extends AppCompatActivity {
         dress.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/bHrgLOwWaxImJHunL1uWbuGV.webp", "Rachel Mauve",6));
         dress.add(new Logo("https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/lfuQKqrT0ZM38dhqm4vhFFmI.webp","Bella Red Ginger",7));
         Adapter adapter = new Adapter(this, dress);
+        adapter.setListdetail(DetailList.getListData1());
         dressView.setAdapter(adapter);
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);

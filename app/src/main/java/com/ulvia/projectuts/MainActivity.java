@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void ExitPress(View view) {
-        int backButtonCount = 0;
+        int backButtonCount = -1;
         if(backButtonCount >= 2)
         {
             Intent intent = new Intent(Intent.ACTION_MAIN);
