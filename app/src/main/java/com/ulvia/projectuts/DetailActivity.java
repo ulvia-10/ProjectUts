@@ -21,12 +21,14 @@ public class DetailActivity extends AppCompatActivity {
         TextView stok = findViewById(R.id.item_stok);
         TextView title = findViewById(R.id.item_role);
         TextView description = findViewById(R.id.item_desc);
+        TextView harga = findViewById(R.id.item_harga);
 
         Detail detail = getIntent().getParcelableExtra(EXTRA_ITEM);
         Picasso.get().load(detail.getLogo()).into(logo);
         stok.setText(detail.getStok());
         title.setText(detail.getJudul());
         description.setText(detail.getDesc());
+        harga.setText((detail.getHarga()));
 
     }
 }

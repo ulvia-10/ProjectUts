@@ -10,6 +10,51 @@ public class Detail implements Parcelable {
     private String judul;
     private String desc;
     private String stok;
+    private String harga;
+
+    protected Detail(Parcel in) {
+        logo = in.readString();
+        judul = in.readString();
+        desc = in.readString();
+        stok = in.readString();
+        harga = in.readString();
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(logo);
+        dest.writeString(judul);
+        dest.writeString(desc);
+        dest.writeString(stok);
+        dest.writeString(harga);
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    public static final Creator<Detail> CREATOR = new Creator<Detail>() {
+        @Override
+        public Detail createFromParcel(Parcel in) {
+            return new Detail(in);
+        }
+
+        @Override
+        public Detail[] newArray(int size) {
+            return new Detail[size];
+        }
+    };
+
+    public String getHarga() {
+        return harga;
+    }
+
+    public void setHarga(String harga) {
+        this.harga = harga;
+    }
+
+
 
     public Detail() {
 
@@ -47,36 +92,4 @@ public class Detail implements Parcelable {
         this.stok = stok;
     }
 
-
-    protected Detail(Parcel in) {
-        logo = in.readString();
-        judul = in.readString();
-        desc = in.readString();
-        stok = in.readString();
-    }
-
-    @Override
-    public void writeToParcel(Parcel dest, int flags) {
-        dest.writeString(logo);
-        dest.writeString(judul);
-        dest.writeString(desc);
-        dest.writeString(stok);
-    }
-
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    public static final Creator<Detail> CREATOR = new Creator<Detail>() {
-        @Override
-        public Detail createFromParcel(Parcel in) {
-            return new Detail(in);
-        }
-
-        @Override
-        public Detail[] newArray(int size) {
-            return new Detail[size];
-        }
-    };
 }
