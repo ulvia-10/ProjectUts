@@ -96,7 +96,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             int position = getAdapterPosition(); // gets item position
             if (position != RecyclerView.NO_POSITION) { // Check if an item was deleted, but the user clicked it before the UI removed it
                 // We can access the data within the views
-                Toast.makeText(context, logoImage.getImageAlpha(), Toast.LENGTH_SHORT).show();
                 Toast.makeText(context, nameText.getText(), Toast.LENGTH_SHORT).show();
             }
         }

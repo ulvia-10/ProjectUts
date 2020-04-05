@@ -21,7 +21,7 @@ public class DetailList {
             },
             {"https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/bHrgLOwWaxImJHunL1uWbuGV.webp","Rachel Mauve",
                     "Gamis : Katun Madinah\n" +
-                            "Bahan ini emang super nyaman buat badan kamu, karena karakternya yang super adem, menyerap keringat dan lembut.\n ","Stok: 2","Rp.1.000.000"
+                            "Bahan ini emang super nyaman buat badan kamu, karena karakternya yang super adem, menyerap keringat dan lembut.\n ","Stok: 2","Rp.764.000"
             },
             {"https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/lfuQKqrT0ZM38dhqm4vhFFmI.webp","Bella Red Ginger",
                     "Bahan yang satu ini dipilih untuk Bella dress karena teksturnya yang ngga halus tapi tidak letoy, keunggulan dari bahan ini adalah tidak transparan (terawang) jadi aman deh buat aktivitas kamu sehari-hari. \n ","Stok: 2","Rp. 349.000"
@@ -42,10 +42,10 @@ public class DetailList {
                             "✓ Bergaransi  \n","Stok: 2","Rp.560.000"
             },
             {
-                "https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbekiZ.webp","Detail Shoes\n" +
+                "https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/LMbekiZ.webp","Kania Snow Grey","Detail Shoes\n" +
                     "✓ Bahan: Synthetic premium (kualitas kelas premium)\n" +
                     "✓ Ketebalan busa 5mm (alas sangat empuk)\n" +
-                    "✓ Lapisan dalam: Double mess (empuk dan ngga gampang mengelupas)\n","Kania Snow Grey","Stok: 2","Rp.670.000"
+                    "✓ Lapisan dalam: Double mess (empuk dan ngga gampang mengelupas)\n","Stok: 2","Rp.670.000"
             },
             {
                     "https://img.berdu.my.id/img/400/vn2yyd7vn4r9okm3/VTsxrokK0fad9WF9XWDu5B2.webp","Zoolea Berry","Sol: TPR (kuat dan tahan lama)\n" +
@@ -122,8 +122,6 @@ public class DetailList {
                     "✓ Tali yang bisa di adjustable\n" +
                     "2. Bahan metalic jadi lebih terlihat elegan  ","Stok:9","Rp. 850000"
             }
-
-
     };
     public static ArrayList<Detail> getListData1(){
         Detail detail;
