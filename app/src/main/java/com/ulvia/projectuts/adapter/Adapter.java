@@ -64,7 +64,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
         Picasso.get().load(item.getLogo()).into(holder.logoImage);
         //intent parcelable to detail
-        holder.button.setOnClickListener(new View.OnClickListener() {
+        holder.nameText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent detailActivity = new Intent(context, DetailActivity.class);
@@ -83,13 +83,11 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView logoImage;
         TextView nameText;
-        Button button;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             this.logoImage = itemView.findViewById(R.id.image_logo);
             this.nameText = itemView.findViewById(R.id.text_name);
-            button = itemView.findViewById(R.id.btn_detail);
             itemView.setOnClickListener(this);
 
         }
@@ -98,6 +96,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             int position = getAdapterPosition(); // gets item position
             if (position != RecyclerView.NO_POSITION) { // Check if an item was deleted, but the user clicked it before the UI removed it
                 // We can access the data within the views
+                Toast.makeText(context, logoImage.getImageAlpha(), Toast.LENGTH_SHORT).show();
                 Toast.makeText(context, nameText.getText(), Toast.LENGTH_SHORT).show();
             }
         }

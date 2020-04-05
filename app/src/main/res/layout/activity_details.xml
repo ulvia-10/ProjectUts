@@ -8,56 +8,83 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="340dp"
-        android:layout_height="251dp"
+        android:layout_width="378dp"
+        android:layout_height="263dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.633"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.12"
+        app:layout_constraintVertical_bias="0.143"
         app:srcCompat="@drawable/ic_launcher_background"
         tools:ignore="VectorDrawableCompat" />
 
     <TextView
         android:id="@+id/item_desc"
-        android:layout_width="258dp"
-        android:layout_height="228dp"
+        android:layout_width="264dp"
+        android:layout_height="291dp"
         android:gravity="center"
         android:text="Nama Item "
         android:textSize="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/item_role"
-        android:layout_width="148dp"
-        android:layout_height="40dp"
+        android:layout_width="181dp"
+        android:layout_height="38dp"
         android:gravity="center"
-        android:textSize="20dp"
         android:text="Role Item "
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintHorizontal_bias="0.208"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/item_stok"
-        android:layout_width="78dp"
-        android:layout_height="43dp"
+        android:layout_width="84dp"
+        android:layout_height="37dp"
         android:gravity="center"
         android:text="Stok"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
         android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintHorizontal_bias="0.84"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.553" />
+
+    <TextView
+        android:id="@+id/item_stok2"
+        android:layout_width="84dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:textFontWeight="@android:integer/config_mediumAnimTime"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="286dp"
+        android:layout_height="54dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.008"
+        app:srcCompat="@drawable/logotulisan" />
 </androidx.constraintlayout.widget.ConstraintLayout>
