@@ -26,7 +26,7 @@
         android:paddingTop="2dp"
         android:text="Nama Item "
         android:textSize="18dp"
-        android:textColor="#FFFFFF"
+        android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.571"
@@ -57,7 +57,7 @@
         android:text="Stok"
         android:textColor="#ED1E92"
         android:textFontWeight="@android:integer/config_mediumAnimTime"
-        android:textSize="15dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.84"
@@ -67,19 +67,19 @@
 
     <TextView
         android:id="@+id/item_harga"
-        android:layout_width="84dp"
-        android:layout_height="37dp"
+        android:layout_width="101dp"
+        android:layout_height="40dp"
         android:gravity="center"
         android:text="Harga"
         android:textColor="#ED1E92"
         android:textFontWeight="@android:integer/config_mediumAnimTime"
-        android:textSize="15dp"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.84"
+        app:layout_constraintHorizontal_bias="0.887"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515" />
+        app:layout_constraintVertical_bias="0.512" />
 
     <ImageView
         android:id="@+id/imageView2"

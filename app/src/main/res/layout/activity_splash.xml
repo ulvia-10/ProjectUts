@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".SplashActivity">
 
     <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="218dp"
-        android:layout_height="411dp"
+        android:id="@+id/imageView7"
+        android:layout_width="291dp"
+        android:layout_height="357dp"
         android:background="#FFFFFF"
-        android:src="@drawable/logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
 </androidx.constraintlayout.widget.ConstraintLayout>
